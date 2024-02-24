@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="imageArea">
+      <div class="textContainer">
+        <div class="heading">Register now for FREE!</div>
+        <div class="description">We want do it again, For millions of user who loved. And who believe there is a always a hastle solution to doing things</div>
+      </div>
+    </div>
+    <div class="formContainer">
+      <form novalidate>
+        <div class="inputContainer">
+          <input type="email" required placeholder="Email address" id="mail">
+          <div class="emailError"></div>
+        </div>
+        <div class="inputContainer">
+          <input type="text" required placeholder="Country" id="country">
+          <div class="countryError"></div>
+        </div>
+        <div class="inputContainer">
+          <input type="text" required placeholder="Zip Code" id="zip" pattern="^[0-9]{5}(?:-[0-9]{4})?$">
+          <div class="zipError"></div>
+        </div>
+        <div class="inputContainer">
+          <input type="password" required placeholder="Password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$" minlength="8" maxlength="30">
+          <div class="passError"></div>
+        </div>
+        <div class="inputContainer">
+          <input type="password" required placeholder="Confirm password" id="confirmPassword">
+          <div class="confiPassError"></div>
+        </div>
+        <button class="submitButton">Submit</button>
+      </form>
+    </div>
+    
+  </div>
+</body>
+</html>
